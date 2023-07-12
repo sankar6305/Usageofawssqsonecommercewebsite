@@ -10,10 +10,10 @@ AWS.config.update({
 
 
 const connection = mysql.createConnection({
-    host: 'YOUR_DATABASE_HOST',
-    user: 'YOUR_DATABASE_USERNAME',
+    host: 'localhost',
+    user: 'sankar',
     password: 'YOUR_DATABASE_PASSWORD',
-    database: 'YOUR_DATABASE_NAME'
+    database: 'orders'
 });
 
 connection.connect((err) => {
