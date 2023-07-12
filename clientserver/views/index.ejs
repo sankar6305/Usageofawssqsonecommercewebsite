@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Details</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div>
+    <h1 style="margin-left: 41%;">Ecommerce website</h1>
+  <% for(let i = 1; i <= 10; i++) { %>
+  <form class="product-container" method="GET" action="/checkout/<%= i %>">
+    <img  class="img" src="product.PNG" alt="Product Image" name="img1">
+    <h2 class="product-name" name="name">Product Name <%= i %></h2>
+    <p class="product-description" name="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis nisi vitae elit ullamcorper malesuada.</p>
+    <p class="product-price" name="price">$99.99</p>
+    <input type="submit" class="add-to-cart" value="Buy product <%= i %>">
+  </form>
+  <% } %>
+  </div>
+</body>
+</html>
